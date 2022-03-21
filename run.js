@@ -24,7 +24,8 @@ function execShellCommand(command) {
     let OS_BASE_ORG_USERNAME = process.env.OS_BASE_ORG_USERNAME || 'rmasud@sfi-omnistudio-starter.com';
 
     //Use the existing exported auth to establish connectivity
-    await execShellCommand(` sfdx auth:sfdxurl:store -f authFile.json`);
+    await execShellCommand(`sfdx auth:sfdxurl:store -f authFile.json`);
+    await execShellCommand(`sfdx config:set defaultusername=${OS_BASE_ORG_USERNAME}`);
 
     await execShellCommand(`sfdx alias:set os-kickstarter=${OS_BASE_ORG_USERNAME}`);
 
