@@ -7,3 +7,9 @@ This will run on MacOS and Linux to setup a scratch org based on the SF Omnistud
 * OmniStudio V236.3 Managed Package Installed
 * FSC Licenses (No Package Installed)
 * HSC Licenses (No Package Installed)
+
+# Running
+* Run the ./orginit.sh
+or
+* Run via node run.js
+
