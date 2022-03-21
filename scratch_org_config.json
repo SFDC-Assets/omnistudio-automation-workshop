@@ -1,0 +1,13 @@
+{
+    "orgName": "OS_Scratch_Org",
+    "sourceOrg": "00D5e000002GvtZ",
+    "features": ["EnableSetPasswordInApi"],
+    "settings": {
+        "lightningExperienceSettings": {
+            "enableS1DesktopEnabled": true
+        },
+        "mobileSettings": {
+            "enableS1EncryptedStoragePref2": true
+        }
+    }
+}

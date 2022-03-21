@@ -1,0 +1,61 @@
+{
+  "status": 0,
+  "result": [
+    {
+      "createdById": "0055e000004cISqAAM",
+      "createdByName": "Radif Masud",
+      "createdDate": "2021-07-01T20:46:43.000Z",
+      "fileName": "flexipages/omnistudio__Vlocity_OmniScript_Designer.flexipage",
+      "fullName": "omnistudio__Vlocity_OmniScript_Designer",
+      "id": "0M05e000006CUieCAG",
+      "lastModifiedById": "0055e000004cISqAAM",
+      "lastModifiedByName": "Radif Masud",
+      "lastModifiedDate": "2021-07-01T20:46:43.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "omnistudio",
+      "type": "FlexiPage"
+    },
+    {
+      "createdById": "0055e000004cISqAAM",
+      "createdByName": "Radif Masud",
+      "createdDate": "2021-07-01T20:46:38.000Z",
+      "fileName": "flexipages/omnistudio__Vlocity_Digital_Studio_UtilityBar.flexipage",
+      "fullName": "omnistudio__Vlocity_Digital_Studio_UtilityBar",
+      "id": "0M05e000006CUidCAG",
+      "lastModifiedById": "0055e000004cISqAAM",
+      "lastModifiedByName": "Radif Masud",
+      "lastModifiedDate": "2021-07-01T20:46:38.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "omnistudio",
+      "type": "FlexiPage"
+    },
+    {
+      "createdById": "0055e000004cISqAAM",
+      "createdByName": "Radif Masud",
+      "createdDate": "2021-07-01T20:46:37.000Z",
+      "fileName": "flexipages/omnistudio__LWCFlexCards.flexipage",
+      "fullName": "omnistudio__LWCFlexCards",
+      "id": "0M05e000006CUicCAG",
+      "lastModifiedById": "0055e000004cISqAAM",
+      "lastModifiedByName": "Radif Masud",
+      "lastModifiedDate": "2021-07-01T20:46:37.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "omnistudio",
+      "type": "FlexiPage"
+    },
+    {
+      "createdById": "0055e000004cISqAAM",
+      "createdByName": "Radif Masud",
+      "createdDate": "2021-07-01T20:46:37.000Z",
+      "fileName": "flexipages/omnistudio__FlexCardDesigner.flexipage",
+      "fullName": "omnistudio__FlexCardDesigner",
+      "id": "0M05e000006CUibCAG",
+      "lastModifiedById": "0055e000004cISqAAM",
+      "lastModifiedByName": "Radif Masud",
+      "lastModifiedDate": "2021-07-01T20:46:37.000Z",
+      "manageableState": "installed",
+      "namespacePrefix": "omnistudio",
+      "type": "FlexiPage"
+    }
+  ]
+}
