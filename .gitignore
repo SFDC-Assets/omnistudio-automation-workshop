@@ -102,3 +102,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# remove tracking on temp sfdx orgs
+ .sfdx/orgs/t
+
+ #remove keys
+ *.key
