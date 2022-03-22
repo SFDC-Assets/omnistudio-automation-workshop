@@ -38,11 +38,11 @@ function execShellCommand(command) {
     console.log('Finished Omnistudio Package Install - 236.3');
 
     console.log('Starting Omnistudio Post Install Required Remote Sites');
-    let dearPackage1 = await execShellCommand(`./.tooling/${process.platform}/sf.demoengineering.semanticdx.shape.cli dear:package:run ./.dearpackages/sfi.de.omnistudio.default.remotesites.dear ${scratchOrgUsername }`);
+    let dearPackage1 = await execShellCommand(`./.tooling/${process.platform}/sf.demoengineering.semanticdx.shape.cli dear:package:run .dearpackages/sfi.de.omnistudio.default.remotesites.dear ${scratchOrgUsername}`);
     console.log('Finished Omnistudio Post Install Required Remote Sites');
 
     console.log('Starting Omnistudio Post Install OmniUiCard Designer Activate');
-    let dearPackage2 = await execShellCommand(`./.tooling/${process.platform}/sf.demoengineering.semanticdx.shape.cli dear:package:run ./.dearpackages/sfi.de.omnistudio.omniuicard.designer.dear ${scratchOrgUsername }`);
+    let dearPackage2 = await execShellCommand(`./.tooling/${process.platform}/sf.demoengineering.semanticdx.shape.cli dear:package:run .dearpackages/sfi.de.omnistudio.omniuicard.designer.dear ${scratchOrgUsername}`);
     console.log('Finished Omnistudio Post Install OmniUiCard Designer Activate');
 
     process.exit();
