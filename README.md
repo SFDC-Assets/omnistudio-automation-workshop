@@ -22,3 +22,7 @@ or
     node run.js
     ```
 
+# Manual Steps
+* Go to Setup-> Lightning App Builder
+    * Click on View for Vlocity Card Designer
+        * Click on Activation and make it the org default for the OmniUiCard object
