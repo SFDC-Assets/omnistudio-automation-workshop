@@ -106,5 +106,10 @@ dist
 # remove tracking on temp sfdx orgs
  .sfdx/orgs/t
 
- #remove keys
+# remove keys
  *.key
+
+# remove dear processing dirs
+processing_queue/
+publish/
+assets/
