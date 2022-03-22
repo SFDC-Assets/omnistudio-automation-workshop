@@ -113,3 +113,5 @@ dist
 processing_queue/
 publish/
 assets/
+compile/
+*.dear/
