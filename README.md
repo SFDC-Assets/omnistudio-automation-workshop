@@ -1,5 +1,5 @@
 # omnistudio-basic-scratchorg
-Basic Omnistudio scratch org using a org shape as the baseline and installing the Omnistudio 236.3 package.
+Basic Omnistudio scratch org license and installing the Omnistudio 236.3 package.
 
 # Getting Started
 This will provision a scratch org with:
