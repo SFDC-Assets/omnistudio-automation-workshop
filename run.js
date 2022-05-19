@@ -34,7 +34,7 @@ function execShellCommand(command) {
     console.log('Finished Scratch Org Create');
 
     console.log('Starting Omnistudio Package Install - 236.3');
-    let packageResult = await execShellCommand(`sfdx force:package:install -p 04t4W000002kdlN -w 45 -r -u ${scratchOrgUsername} --json `);
+    let packageResult = await execShellCommand(`sfdx force:package:install -p d -w 45 -r -u ${scratchOrgUsername} --json `);
     console.log('Finished Omnistudio Package Install - 236.3');
 
     console.log('Starting Omnistudio Post Install Required Remote Sites');
