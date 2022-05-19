@@ -1,20 +1,5 @@
 {
-<<<<<<< HEAD
     "orgName": "OmniScript Company",
     "edition": "Enterprise",
     "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner"]
 }
-=======
-  "orgName": "rmasud company",
-  "edition": "Developer",
-  "features": ["EnableSetPasswordInApi"],
-  "settings": {
-    "lightningExperienceSettings": {
-      "enableS1DesktopEnabled": true
-    },
-    "mobileSettings": {
-      "enableS1EncryptedStoragePref2": false
-    }
-  }
-}
->>>>>>> e6d659a8877967b90dbf02b09b495384572dff40
