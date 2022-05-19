@@ -1,12 +1,15 @@
 #!/usr/bin/env bash
 
-#node run.js
-#sfdx force:org:shape:create -u os-kickstarter
+#create scratch org
+sfdx force:org:create -s -f config/project-scratch-def.json -d 14 -s -w 60
 
-#sfdx force:org:create -f scratch_org_config.json --durationdays 30 -v os-kickstarter --json --wait 10
-
+#install OmniStudio
 sfdx force:package:install -p 04t4W000002kdlN -w 45 -r #-u test-xswtozekwwxp@example.com
 
+#push the utility metadata service class
+sfdx force:source:deploy -m ApexClass:MetadataService
+
+#set the remote sites
 sfdx force:apex:execute -f dparemoteSites.cls
 
 #./.tooling/sf.demoengineering.semanticdx.shape.cli dear:package:run sfi.de.omnistudio.default.remotesites.dear test-xswtozekwwxp@example.com
