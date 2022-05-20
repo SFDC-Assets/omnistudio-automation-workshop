@@ -11,3 +11,6 @@ sfdx force:source:deploy -m ApexClass:MetadataService
 
 #set the remote sites
 sfdx force:apex:execute -f dparemoteSites.cls
+
+#open says me.
+sfdx force:org:open
