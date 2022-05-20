@@ -1,5 +1,5 @@
 {
     "orgName": "OmniScript Company",
     "edition": "Enterprise",
-    "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner"]
+    "features": ["EnhancedEmail", "AuthorApex", "DebugApex", "OmniStudioDesigner"]
 }
