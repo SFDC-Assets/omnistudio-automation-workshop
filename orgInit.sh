@@ -12,5 +12,9 @@ sfdx force:source:deploy -m ApexClass:MetadataService
 #set the remote sites
 sfdx force:apex:execute -f dparemoteSites.cls
 
+#TODO - Puppateer to set OmniStudio Metadata to TRUE via UI 
+
+#TODO- Push metadata example into the org (inactive)
+
 #open says me.
 sfdx force:org:open
