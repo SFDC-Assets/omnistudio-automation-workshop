@@ -3,7 +3,7 @@ Basic Omnistudio scratch org license and installing the Omnistudio 236.3 package
 
 # Getting Started
 This will provision a scratch org with:
-* OmniStudio V236.3 Managed Package Installed
+* OmniStudio V238.1 Managed Package Installed
 * Configure required remote site settings
 
 # Running
