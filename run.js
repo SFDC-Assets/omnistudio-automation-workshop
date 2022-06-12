@@ -69,6 +69,9 @@ const utils = require('./utils');
         console.log(error);
     }
 
+    await utils.sleep(10000);
+
+
     //Standard OmniStudio
     try {
         await page.evaluateHandle(
