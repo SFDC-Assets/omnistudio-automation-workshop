@@ -15,7 +15,7 @@ sfdx force:apex:execute -f dparemoteSites.cls
 #Puppateer to set OmniStudio Metadata to TRUE via UI  and enable the  standard runtime
 node run.js
 
-#Sample metadata examples into the org - basic hellow world.
+#Sample metadata examples into the org - basic hello world.
 sfdx force:source:deploy -m OmniUiCard,OmniScript,OmniIntegrationProcedure,OmniDataTransform
 
 #open says me.
