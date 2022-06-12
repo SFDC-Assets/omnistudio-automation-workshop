@@ -4,7 +4,7 @@
 sfdx force:org:create -s -f config/project-scratch-def.json -d 14 -s -w 60
 
 #install OmniStudio - 238
-sfdx force:package:install -p 04t4W000002ke26QAA -w 45 -r 
+#sfdx force:package:install -p 04t4W000002ke26QAA -w 45 -r 
 
 #push the utility metadata service class
 sfdx force:source:deploy -m ApexClass:MetadataService
