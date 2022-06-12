@@ -1,0 +1,8 @@
+{
+    "orgName": "Salesforc_DemoAssets",
+    "edition": "Developer",
+    "adminEmail": "omni@example.com",
+    "hasSampleData": true,
+    "release": "Preview",
+    "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner"]
+}
