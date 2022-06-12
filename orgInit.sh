@@ -12,7 +12,7 @@ sfdx force:source:deploy -m ApexClass:MetadataService
 #set the remote sites
 sfdx force:apex:execute -f dparemoteSites.cls
 
-#Puppateer to set OmniStudio Metadata to TRUE via UI  and enable the  standard runtime
+#Puppeteer to set OmniStudio Metadata to TRUE via UI  and enable the  standard runtime
 node run.js
 
 #Sample metadata examples into the org - basic hello world.
