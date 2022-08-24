@@ -16,7 +16,8 @@ sfdx force:apex:execute -f dparemoteSites.cls
 node run.js
 
 #Sample metadata examples into the org - basic hello world.
-sfdx force:source:deploy -m OmniUiCard,OmniScript,OmniIntegrationProcedure,OmniDataTransform
+# sfdx force:source:deploy -m OmniUiCard,OmniScript,OmniIntegrationProcedure,OmniDataTransform
+sfdx force:source:push
 
 #open says me.
 sfdx force:org:open
