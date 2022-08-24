@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <assignmentRulesUsed>false</assignmentRulesUsed>
+    <deletedOnSuccess>false</deletedOnSuccess>
+    <errorIgnored>false</errorIgnored>
+    <expectedInputJson>{
+    &quot;ElapsedTime&quot;: 20984,
+    &quot;Type&quot;: &quot;DataRaptor Transform Action&quot;,
+    &quot;Input&quot;: {
+        &quot;CallCountriesAPIStatus&quot;: true,
+        &quot;CallCountriesAPI&quot;: [
+            {
+                &quot;currencies&quot;: [
+                    {
+                        &quot;name&quot;: &quot;United States dollar&quot;,
+                        &quot;code&quot;: &quot;USD&quot;,
+                        &quot;symbol&quot;: &quot;$&quot;
+                    }
+                ],
+                &quot;latlng&quot;: [
+                    38,
+                    -97
+                ],
+                &quot;region&quot;: &quot;Americas&quot;,
+                &quot;name&quot;: &quot;United States of America&quot;,
+                &quot;timezones&quot;: [
+                    &quot;UTC-12:00&quot;,
+                    &quot;UTC-11:00&quot;,
+                    &quot;UTC-10:00&quot;,
+                    &quot;UTC-09:00&quot;,
+                    &quot;UTC-08:00&quot;,
+                    &quot;UTC-07:00&quot;,
+                    &quot;UTC-06:00&quot;,
+                    &quot;UTC-05:00&quot;,
+                    &quot;UTC-04:00&quot;,
+                    &quot;UTC+10:00&quot;,
+                    &quot;UTC+12:00&quot;
+                ],
+                &quot;population&quot;: 329484123,
+                &quot;gini&quot;: 41.4,
+                &quot;regionalBlocs&quot;: [
+                    {
+                        &quot;name&quot;: &quot;North American Free Trade Agreement&quot;,
+                        &quot;acronym&quot;: &quot;NAFTA&quot;,
+                        &quot;otherNames&quot;: [
+                            &quot;Tratado de Libre Comercio de América del Norte&quot;,
+                            &quot;Accord de Libre-échange Nord-Américain&quot;
+                        ]
+                    }
+                ],
+                &quot;callingCodes&quot;: [
+                    &quot;1&quot;
+                ],
+                &quot;subregion&quot;: &quot;Northern America&quot;,
+                &quot;languages&quot;: [
+                    {
+                        &quot;iso639_1&quot;: &quot;en&quot;,
+                        &quot;name&quot;: &quot;English&quot;,
+                        &quot;iso639_2&quot;: &quot;eng&quot;,
+                        &quot;nativeName&quot;: &quot;English&quot;
+                    }
+                ],
+                &quot;area&quot;: 9629091,
+                &quot;altSpellings&quot;: [
+                    &quot;US&quot;,
+                    &quot;USA&quot;,
+                    &quot;United States of America&quot;
+                ],
+                &quot;translations&quot;: {
+                    &quot;es&quot;: &quot;Estados Unidos&quot;,
+                    &quot;nl&quot;: &quot;Verenigde Staten&quot;,
+                    &quot;hu&quot;: &quot;Amerikai Egyesült Államok&quot;,
+                    &quot;fr&quot;: &quot;États-Unis&quot;,
+                    &quot;it&quot;: &quot;Stati Uniti D&apos;America&quot;,
+                    &quot;fa&quot;: &quot;ایالات متحده آمریکا&quot;,
+                    &quot;hr&quot;: &quot;Sjedinjene Američke Države&quot;,
+                    &quot;ja&quot;: &quot;アメリカ合衆国&quot;,
+                    &quot;pt&quot;: &quot;Estados Unidos&quot;,
+                    &quot;de&quot;: &quot;Vereinigte Staaten von Amerika&quot;,
+                    &quot;br&quot;: &quot;Estados Unidos&quot;
+                },
+                &quot;cioc&quot;: &quot;USA&quot;,
+                &quot;topLevelDomain&quot;: [
+                    &quot;.us&quot;
+                ],
+                &quot;alpha3Code&quot;: &quot;USA&quot;,
+                &quot;numericCode&quot;: &quot;840&quot;,
+                &quot;flags&quot;: {
+                    &quot;png&quot;: &quot;https://flagcdn.com/w320/us.png&quot;,
+                    &quot;svg&quot;: &quot;https://flagcdn.com/us.svg&quot;
+                },
+                &quot;borders&quot;: [
+                    &quot;CAN&quot;,
+                    &quot;MEX&quot;
+                ],
+                &quot;independent&quot;: true,
+                &quot;alpha2Code&quot;: &quot;US&quot;,
+                &quot;flag&quot;: &quot;https://flagcdn.com/us.svg&quot;,
+                &quot;demonym&quot;: &quot;American&quot;,
+                &quot;capital&quot;: &quot;Washington, D.C.&quot;,
+                &quot;nativeName&quot;: &quot;United States&quot;
+            }
+        ],
+        &quot;AcctIdFromFlexCard&quot;: &quot;0011F000014inQKQAY&quot;,
+        &quot;ExtractAccountDataStatus&quot;: true,
+        &quot;options&quot;: {
+            &quot;vlcFilesMap&quot;: null,
+            &quot;mockHttpResponse&quot;: null,
+            &quot;ParentInteractionToken&quot;: null,
+            &quot;useFuture&quot;: false,
+            &quot;isTestProcedure&quot;: false,
+            &quot;useQueueable&quot;: false,
+            &quot;disableMetadataCache&quot;: false,
+            &quot;resetCache&quot;: false,
+            &quot;vlcIPData&quot;: null,
+            &quot;OmniAnalyticsTrackingDebug&quot;: false,
+            &quot;ignoreCache&quot;: true,
+            &quot;isDebug&quot;: true,
+            &quot;queueableChainable&quot;: false,
+            &quot;useContinuation&quot;: false,
+            &quot;chainable&quot;: false,
+            &quot;shouldCommit&quot;: false,
+            &quot;vlcTestSuiteUniqueKey&quot;: null,
+            &quot;vlcTestUniqueKey&quot;: null,
+            &quot;vlcCacheKey&quot;: null,
+            &quot;useHttpCalloutMock&quot;: false,
+            &quot;continuationStepResult&quot;: null,
+            &quot;useQueueableApexRemoting&quot;: false
+        },
+        &quot;CallCountriesAPIInfo&quot;: {
+            &quot;status&quot;: &quot;OK&quot;,
+            &quot;statusCode&quot;: 200,
+            &quot;Content-Type&quot;: &quot;application/json&quot;,
+            &quot;Date&quot;: &quot;Tue, 23 Aug 2022 15:45:25 GMT&quot;,
+            &quot;Connection&quot;: &quot;Keep-Alive&quot;,
+            &quot;Server&quot;: &quot;Apache/2.4.38 (Debian)&quot;,
+            &quot;content-length&quot;: &quot;1412&quot;,
+            &quot;Keep-Alive&quot;: &quot;timeout=5, max=100&quot;
+        },
+        &quot;ExtractAccountData&quot;: {
+            &quot;Revenue&quot;: 100000000,
+            &quot;Employees&quot;: 681,
+            &quot;BillingCountry&quot;: &quot;USA&quot;,
+            &quot;Description&quot;: &quot;asdfsdfasdfadsf&quot;,
+            &quot;Industry&quot;: &quot;Manufacturing&quot;
+        }
+    },
+    &quot;Status&quot;: true
+}</expectedInputJson>
+    <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
+    <inputType>JSON</inputType>
+    <name>TrimAPIResponse</name>
+    <nullInputsIncludedInOutput>false</nullInputsIncludedInOutput>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom3870</globalKey>
+        <inputFieldName>CallCountriesAPI:population</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Population</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom3993</globalKey>
+        <inputFieldName>ExtractAccountData:Revenue</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldFormat>CurrencyRounded</outputFieldFormat>
+        <outputFieldName>Revenue</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom6236</globalKey>
+        <inputFieldName>CallCountriesAPI:languages:name</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Language</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom2138</globalKey>
+        <inputFieldName>ExtractAccountData:Employees</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Employees</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom5315</globalKey>
+        <inputFieldName>ExtractAccountData:Description</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Description</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom5090</globalKey>
+        <inputFieldName>CallCountriesAPI:flag</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Flag</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom4377</globalKey>
+        <inputFieldName>CallCountriesAPI:area</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Area</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom6419</globalKey>
+        <inputFieldName>CallCountriesAPI:capital</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Capital</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <omniDataTransformItem>
+        <disabled>false</disabled>
+        <filterGroup>0.0</filterGroup>
+        <globalKey>TrimAPIResponseCustom9734</globalKey>
+        <inputFieldName>ExtractAccountData:Industry</inputFieldName>
+        <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
+        <linkedObjectSequence>0.0</linkedObjectSequence>
+        <name>TrimAPIResponse</name>
+        <outputCreationSequence>1.0</outputCreationSequence>
+        <outputFieldName>Industry</outputFieldName>
+        <outputObjectName>json</outputObjectName>
+        <requiredForUpsert>false</requiredForUpsert>
+        <upsertKey>false</upsertKey>
+    </omniDataTransformItem>
+    <outputType>JSON</outputType>
+    <previewJsonData>{
+    &quot;CallCountriesAPIStatus&quot;: true,
+    &quot;CallCountriesAPI&quot;: [
+      {
+        &quot;currencies&quot;: [
+          {
+            &quot;name&quot;: &quot;United States dollar&quot;,
+            &quot;code&quot;: &quot;USD&quot;,
+            &quot;symbol&quot;: &quot;$&quot;
+          }
+        ],
+        &quot;latlng&quot;: [
+          38,
+          -97
+        ],
+        &quot;region&quot;: &quot;Americas&quot;,
+        &quot;name&quot;: &quot;United States of America&quot;,
+        &quot;timezones&quot;: [
+          &quot;UTC-12:00&quot;,
+          &quot;UTC-11:00&quot;,
+          &quot;UTC-10:00&quot;,
+          &quot;UTC-09:00&quot;,
+          &quot;UTC-08:00&quot;,
+          &quot;UTC-07:00&quot;,
+          &quot;UTC-06:00&quot;,
+          &quot;UTC-05:00&quot;,
+          &quot;UTC-04:00&quot;,
+          &quot;UTC+10:00&quot;,
+          &quot;UTC+12:00&quot;
+        ],
+        &quot;population&quot;: 329484123,
+        &quot;gini&quot;: 41.4,
+        &quot;regionalBlocs&quot;: [
+          {
+            &quot;name&quot;: &quot;North American Free Trade Agreement&quot;,
+            &quot;acronym&quot;: &quot;NAFTA&quot;,
+            &quot;otherNames&quot;: [
+              &quot;Tratado de Libre Comercio de América del Norte&quot;,
+              &quot;Accord de Libre-échange Nord-Américain&quot;
+            ]
+          }
+        ],
+        &quot;callingCodes&quot;: [
+          &quot;1&quot;
+        ],
+        &quot;subregion&quot;: &quot;Northern America&quot;,
+        &quot;languages&quot;: [
+          {
+            &quot;iso639_1&quot;: &quot;en&quot;,
+            &quot;name&quot;: &quot;English&quot;,
+            &quot;iso639_2&quot;: &quot;eng&quot;,
+            &quot;nativeName&quot;: &quot;English&quot;
+          }
+        ],
+        &quot;area&quot;: 9629091,
+        &quot;altSpellings&quot;: [
+          &quot;US&quot;,
+          &quot;USA&quot;,
+          &quot;United States of America&quot;
+        ],
+        &quot;translations&quot;: {
+          &quot;es&quot;: &quot;Estados Unidos&quot;,
+          &quot;nl&quot;: &quot;Verenigde Staten&quot;,
+          &quot;hu&quot;: &quot;Amerikai Egyesült Államok&quot;,
+          &quot;fr&quot;: &quot;États-Unis&quot;,
+          &quot;it&quot;: &quot;Stati Uniti D&apos;America&quot;,
+          &quot;fa&quot;: &quot;ایالات متحده آمریکا&quot;,
+          &quot;hr&quot;: &quot;Sjedinjene Američke Države&quot;,
+          &quot;ja&quot;: &quot;アメリカ合衆国&quot;,
+          &quot;pt&quot;: &quot;Estados Unidos&quot;,
+          &quot;de&quot;: &quot;Vereinigte Staaten von Amerika&quot;,
+          &quot;br&quot;: &quot;Estados Unidos&quot;
+        },
+        &quot;cioc&quot;: &quot;USA&quot;,
+        &quot;topLevelDomain&quot;: [
+          &quot;.us&quot;
+        ],
+        &quot;alpha3Code&quot;: &quot;USA&quot;,
+        &quot;numericCode&quot;: &quot;840&quot;,
+        &quot;flags&quot;: {
+          &quot;png&quot;: &quot;https://flagcdn.com/w320/us.png&quot;,
+          &quot;svg&quot;: &quot;https://flagcdn.com/us.svg&quot;
+        },
+        &quot;borders&quot;: [
+          &quot;CAN&quot;,
+          &quot;MEX&quot;
+        ],
+        &quot;independent&quot;: true,
+        &quot;alpha2Code&quot;: &quot;US&quot;,
+        &quot;flag&quot;: &quot;https://flagcdn.com/us.svg&quot;,
+        &quot;demonym&quot;: &quot;American&quot;,
+        &quot;capital&quot;: &quot;Washington, D.C.&quot;,
+        &quot;nativeName&quot;: &quot;United States&quot;
+      }
+    ],
+    &quot;AcctIdFromFlexCard&quot;: &quot;0011F000014inQKQAY&quot;,
+    &quot;ExtractAccountDataStatus&quot;: true,
+    &quot;options&quot;: {
+      &quot;vlcFilesMap&quot;: null,
+      &quot;mockHttpResponse&quot;: null,
+      &quot;ParentInteractionToken&quot;: null,
+      &quot;useFuture&quot;: false,
+      &quot;isTestProcedure&quot;: false,
+      &quot;useQueueable&quot;: false,
+      &quot;disableMetadataCache&quot;: false,
+      &quot;resetCache&quot;: false,
+      &quot;vlcIPData&quot;: null,
+      &quot;OmniAnalyticsTrackingDebug&quot;: false,
+      &quot;ignoreCache&quot;: true,
+      &quot;isDebug&quot;: true,
+      &quot;queueableChainable&quot;: false,
+      &quot;useContinuation&quot;: false,
+      &quot;chainable&quot;: false,
+      &quot;shouldCommit&quot;: false,
+      &quot;vlcTestSuiteUniqueKey&quot;: null,
+      &quot;vlcTestUniqueKey&quot;: null,
+      &quot;vlcCacheKey&quot;: null,
+      &quot;useHttpCalloutMock&quot;: false,
+      &quot;continuationStepResult&quot;: null,
+      &quot;useQueueableApexRemoting&quot;: false
+    },
+    &quot;CallCountriesAPIInfo&quot;: {
+      &quot;status&quot;: &quot;OK&quot;,
+      &quot;statusCode&quot;: 200,
+      &quot;Content-Type&quot;: &quot;application/json&quot;,
+      &quot;Date&quot;: &quot;Tue, 23 Aug 2022 15:52:01 GMT&quot;,
+      &quot;Connection&quot;: &quot;Keep-Alive&quot;,
+      &quot;Server&quot;: &quot;Apache/2.4.38 (Debian)&quot;,
+      &quot;content-length&quot;: &quot;1412&quot;,
+      &quot;Keep-Alive&quot;: &quot;timeout=5, max=100&quot;
+    },
+    &quot;ExtractAccountData&quot;: {
+      &quot;Revenue&quot;: 100000000,
+      &quot;Employees&quot;: 681,
+      &quot;BillingCountry&quot;: &quot;USA&quot;,
+      &quot;Description&quot;: &quot;asdfsdfasdfadsf&quot;,
+      &quot;Industry&quot;: &quot;Manufacturing&quot;
+    }
+  }</previewJsonData>
+    <processSuperBulk>false</processSuperBulk>
+    <responseCacheTtlMinutes>0.0</responseCacheTtlMinutes>
+    <rollbackOnError>false</rollbackOnError>
+    <sourceObject>json</sourceObject>
+    <sourceObjectDefault>false</sourceObjectDefault>
+    <synchronousProcessThreshold>0.0</synchronousProcessThreshold>
+    <type>Transform</type>
+    <uniqueName>TrimAPIResponse_1</uniqueName>
+    <versionNumber>1.0</versionNumber>
+    <xmlDeclarationRemoved>false</xmlDeclarationRemoved>
+</OmniDataTransform>
