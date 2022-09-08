@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__Closed_Referrals_I_Created</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>FinServ__ExpressedInterest__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>FinServ__PotentialValue__c</columns>
+    <columns>LEAD.RATING</columns>
+    <columns>CORE.USERS.ALIAS</columns>
+    <columns>LEAD.TITLE</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <filterScope>Everything</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>equals</operation>
+        <value>Closed - Converted,Closed - Not Converted</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.FinServ__BusinessReferral,Lead.FinServ__Referral</value>
+    </filters>
+    <filters>
+        <field>FinServ__CreatedByMe__c</field>
+        <operation>equals</operation>
+        <value>1</value>
+    </filters>
+    <label>Closed Referrals I Created</label>
+</ListView>

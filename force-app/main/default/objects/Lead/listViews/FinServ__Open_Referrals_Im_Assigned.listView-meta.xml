@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ListView xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__Open_Referrals_Im_Assigned</fullName>
+    <columns>FULL_NAME</columns>
+    <columns>FinServ__ExpressedInterest__c</columns>
+    <columns>LEAD.STATUS</columns>
+    <columns>FinServ__PotentialValue__c</columns>
+    <columns>FinServ__ReferredByUser__c</columns>
+    <columns>FinServ__ReferredByContact__c</columns>
+    <columns>FinServ__ReferrerScore__c</columns>
+    <columns>LEAD.RATING</columns>
+    <columns>LEAD.LAST_ACTIVITY</columns>
+    <columns>LEAD.CREATED_DATE</columns>
+    <columns>LEAD.RECORDTYPE</columns>
+    <filterScope>Mine</filterScope>
+    <filters>
+        <field>LEAD.STATUS</field>
+        <operation>notEqual</operation>
+        <value>Closed - Converted,Closed - Not Converted</value>
+    </filters>
+    <filters>
+        <field>LEAD.RECORDTYPE</field>
+        <operation>equals</operation>
+        <value>Lead.FinServ__BusinessReferral,Lead.FinServ__Referral</value>
+    </filters>
+    <label>Open Referrals I&apos;m Assigned</label>
+</ListView>

@@ -1,7 +1,21 @@
 {
-    "orgName": "Salesforc_DemoAssets",
-    "edition": "Developer",
-    "adminEmail": "omni@example.com",
-    "hasSampleData": true,
-    "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner"]
-}
+    "orgName": "FSC Scratch Org with Communities Capabilities",
+    "edition": "Enterprise",
+    "hasSampleData": "true",
+    "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner","ServiceCloud", "EnableSetPasswordInApi","Communities","PersonAccounts","ContactsToMultipleAccounts", "FinancialServicesUser:2", "FinancialServicesCommunityUser:1", "FinancialServicesInsuranceUser"],
+    "adminEmail": "fsc@example.com",
+    "settings": {
+      "lightningExperienceSettings": {
+        "enableS1DesktopEnabled": true
+      },
+      "experienceBundleSettings": {
+        "enableExperienceBundleMetadata": true
+      },
+      "communitiesSettings": {
+        "enableNetworksEnabled": true
+      },
+      "emailAdministrationSettings": {
+        "enableEnhancedEmailEnabled": true
+      }
+    }
+  }

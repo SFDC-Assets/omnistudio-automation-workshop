@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomField xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>FinServ__ExpressedInterest__c</fullName>
+    <deprecated>false</deprecated>
+    <externalId>false</externalId>
+    <label>Expressed Interest</label>
+    <required>false</required>
+    <trackFeedHistory>false</trackFeedHistory>
+    <type>Picklist</type>
+    <valueSet>
+        <restricted>true</restricted>
+        <valueSetName>FinServ__ProductList</valueSetName>
+    </valueSet>
+</CustomField>
