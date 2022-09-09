@@ -1,8 +1,7 @@
 {
-    "packageDirectories": [{
-        "path": "force-app",
-        "default": true
-    }],
+    "packageDirectories": [
+        { "path": "force-app", "default": true }
+    ],
     "name": "omnistudio_scratch_org",
     "namespace": "",
     "sfdcLoginUrl": "https://sfi-omnistudio-starter.my.salesforce.com",

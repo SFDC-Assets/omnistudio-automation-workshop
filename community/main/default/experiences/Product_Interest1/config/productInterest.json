@@ -1,0 +1,66 @@
+{
+  "forgotPasswordRouteId" : "3fd9629b-d254-4e5c-a794-4664e7360132",
+  "isAvailableToGuests" : true,
+  "isFilteredComponentsView" : false,
+  "isProgressiveRenderingEnabled" : false,
+  "loginAppPageId" : "4e76ead9-fdd7-4198-839c-895d3e0401e1",
+  "mainAppPageId" : "a8caf1c7-f6fb-4bd9-a39d-73702775e7ef",
+  "preferredDomain" : "none",
+  "selfRegistrationRouteId" : "f3e88f44-a0fc-411b-9a33-219fe84e77a3",
+  "trustedSitesForScript" : [ {
+    "id" : "ee62616d-14b2-4c35-8e2c-94a00ddf2467",
+    "isActive" : true,
+    "trustedSiteName" : "Google Maps",
+    "trustedSiteUrl" : "https://maps.googleapis.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "935b535e-7a45-4338-a1cb-804eeacc29dc",
+    "isActive" : true,
+    "trustedSiteName" : "Handshake",
+    "trustedSiteUrl" : "https://www.theladders.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "76678545-00fa-4aaa-a942-43d2f358d48f",
+    "isActive" : true,
+    "trustedSiteName" : "Maps",
+    "trustedSiteUrl" : "https://maps.a.forceusercontent.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "22315ac7-e3db-40f1-b625-3137f9ea7a19",
+    "isActive" : true,
+    "trustedSiteName" : "Background",
+    "trustedSiteUrl" : "https://lightningappcookbook.salesforce.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "e51ee3f9-dc27-415a-b269-bced204370ff",
+    "isActive" : true,
+    "trustedSiteName" : "Background 2",
+    "trustedSiteUrl" : "https://encrypted-tbn0.gstatic.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "fcbec647-adad-4065-9ad5-637ade90191d",
+    "isActive" : true,
+    "trustedSiteName" : "Background 3",
+    "trustedSiteUrl" : "https://ironcreative.com",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "9dee3910-d207-4d7a-a711-d7b4ac4cea92",
+    "isActive" : true,
+    "trustedSiteName" : "Background 4",
+    "trustedSiteUrl" : "https://files.casted.us",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "2a785b96-e686-4b59-8747-e6f7b1028d29",
+    "isActive" : true,
+    "trustedSiteName" : "Background 5",
+    "trustedSiteUrl" : "https://qrsolutions.in",
+    "type" : "trustedSitesForScripts"
+  }, {
+    "id" : "185cdf31-abd1-4f7e-8739-7a8857572c7f",
+    "isActive" : true,
+    "trustedSiteName" : "Background 6",
+    "trustedSiteUrl" : "https://www.imovo.com.mt",
+    "type" : "trustedSitesForScripts"
+  } ],
+  "type" : "site"
+}

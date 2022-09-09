@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        {webruntimeInit}
+        {headmarkup}
+        <link rel="stylesheet" href="assets/styles/overrides.css?{ versionKey }" />
+        <link rel="stylesheet" href="assets/css/fonts-and-custom.css?{ versionKey }" />
+    </head>
+    <body>
+        <div id="webruntime-browser-not-supported-message" style="display: none;">
+            <section
+                role="alertdialog"
+                tabindex="-1"
+                aria-labelledby="prompt-heading-id"
+                aria-describedby="prompt-message-wrapper"
+                class="slds-modal slds-fade-in-open slds-modal_prompt"
+                aria-modal="true"
+                style="color: rgb(62, 62, 60);"
+            >
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header slds-theme_info slds-theme_alert-texture">
+                        <h2 class="slds-text-heading_medium" id="prompt-heading-id">
+                            Your browser isn't supported
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_medium" id="prompt-message-wrapper">
+                        <p>
+                            Your browser doesn’t support some features on this site. For the best
+                            experience, update your browser to the latest version, or switch to another
+                            browser.
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer slds-theme_default">
+                        <button class="slds-button slds-button_neutral">Got It</button>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+        <script type="text/javascript">
+            function displayBrowserUnsupportedModalIfNeeded() {
+                if (!window.isBrowserSupportedByWebruntime) {
+                    var WEBRUNTIME_UNSUPPORTED_BROWSER_MODAL_ID = 'webruntime-browser-not-supported-message';
+                    var modal = document.getElementById(WEBRUNTIME_UNSUPPORTED_BROWSER_MODAL_ID);
+                    if (modal) {
+                        modal.style.display = '';
+                        var okButton = document.querySelector(
+                            '#' + WEBRUNTIME_UNSUPPORTED_BROWSER_MODAL_ID + ' ' + '.slds-button'
+                        );
+                        okButton.addEventListener('click', function() {
+                            var modal = document.getElementById(WEBRUNTIME_UNSUPPORTED_BROWSER_MODAL_ID);
+                            if (modal) {
+                                document.body.removeChild(modal);
+                            }
+                        });
+                    }
+                }
+            }
+            displayBrowserUnsupportedModalIfNeeded();
+        </script>
+        <webruntime-app></webruntime-app>
+    </body>
+</html>
