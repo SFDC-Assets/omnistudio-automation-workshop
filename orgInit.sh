@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+# https://hosted-scratch.herokuapp.com/launch?template=https://github.com/SFDC-Assets/omnistudio-automation-workshop
+
 #create scratch org
 sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix omni -o studio.workshop
 
@@ -14,6 +16,8 @@ sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FinancialServicesCloudExtension
 
 sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
+
+sleep 300
 
 #push the utility metadata service class
 sfdx force:source:deploy -m ApexClass:MetadataService
