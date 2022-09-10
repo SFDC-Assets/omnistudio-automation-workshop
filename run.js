@@ -60,7 +60,6 @@ const utils = require('./utils');
 
 
     //OmniStudio Runtime
-    /*
     try {
         await page.evaluateHandle(
             () => document.querySelectorAll('runtime_omnistudio-pref-toggle')[0].shadowRoot.querySelector('lightning-input').shadowRoot.querySelector('input').click()
@@ -71,7 +70,6 @@ const utils = require('./utils');
     }
 
     await utils.sleep(10000);
-*/
 
     //Standard OmniStudio
     try {
