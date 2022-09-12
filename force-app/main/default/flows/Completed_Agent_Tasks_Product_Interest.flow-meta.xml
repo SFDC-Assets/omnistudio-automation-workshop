@@ -17,8 +17,8 @@
             <booleanValue>true</booleanValue>
         </value>
     </choices>
-    <interviewLabel>Agent Tasks - Product Interest {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Agent Tasks - Product Interest</label>
+    <interviewLabel>Completed Agent Tasks - Product Interest {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Completed Agent Tasks - Product Interest</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -106,7 +106,7 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>VIPDetailsChart</name>
+            <name>VIPDetails</name>
             <extensionName>c:cfVipDetails</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
