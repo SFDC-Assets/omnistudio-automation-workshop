@@ -3,8 +3,4 @@
     <hasActivationRequired>false</hasActivationRequired>
     <label>Slack Permissions</label>
     <license>Salesforce</license>
-    <userPermissions>
-        <enabled>true</enabled>
-        <name>UserSlackCapabilities</name>
-    </userPermissions>
 </PermissionSet>
