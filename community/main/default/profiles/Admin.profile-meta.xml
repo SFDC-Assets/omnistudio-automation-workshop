@@ -1187,4 +1187,9 @@
         <enabled>true</enabled>
         <name>ViewUserPII</name>
     </userPermissions>
+    <loginIpRanges>
+        <description>the whole internet</description>
+        <startAddress>0.0.0.0</startAddress>
+        <endAddress>255.255.255.255</endAddress>
+    </loginIpRanges>
 </Profile>
