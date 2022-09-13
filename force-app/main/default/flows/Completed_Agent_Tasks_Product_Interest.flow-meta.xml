@@ -132,7 +132,7 @@
             <targetReference>GetLead</targetReference>
         </connector>
     </start>
-    <status>Draft</status>
+    <status>Active</status>
     <variables>
         <name>LeadId</name>
         <dataType>String</dataType>

@@ -11,7 +11,7 @@
             <name>VIP</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Step_Agent_Tasks.Outputs.Refreshed_VIP_Status</leftValueReference>
+                <leftValueReference>Main_Agent_Tasks.Outputs.Refreshed_VIP_Status</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -40,16 +40,37 @@
         </connector>
         <exitConditionLogic>and</exitConditionLogic>
         <stageSteps>
-            <name>Step_Agent_Tasks</name>
+            <name>Get_Username</name>
+            <actionName>User_Get_by_Alias</actionName>
+            <actionType>stepBackground</actionType>
+            <entryConditionLogic>and</entryConditionLogic>
+            <inputParameters>
+                <name>alias</name>
+                <value>
+                    <stringValue>UUser</stringValue>
+                </value>
+            </inputParameters>
+            <label>Get Username</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+        </stageSteps>
+        <stageSteps>
+            <name>Main_Agent_Tasks</name>
             <actionName>Agent_Tasks_Product_Interest</actionName>
             <actionType>stepInteractive</actionType>
             <assignees>
                 <assignee>
-                    <stringValue>omni2@studio.workshop</stringValue>
+                    <elementReference>Get_Username.Outputs.user</elementReference>
                 </assignee>
                 <assigneeType>User</assigneeType>
             </assignees>
             <entryConditionLogic>and</entryConditionLogic>
+            <entryConditions>
+                <leftValueReference>Get_Username.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </entryConditions>
             <inputParameters>
                 <name>ActionInput__RecordId</name>
                 <value>
@@ -72,20 +93,6 @@
         <locationX>50</locationX>
         <locationY>551</locationY>
         <exitConditionLogic>and</exitConditionLogic>
-        <stageSteps>
-            <name>Step_Create_Slack_Channel</name>
-            <actionName>Create_Lead_Slack_Channel</actionName>
-            <actionType>stepBackground</actionType>
-            <entryConditionLogic>and</entryConditionLogic>
-            <inputParameters>
-                <name>LeadAccountName</name>
-                <value>
-                    <elementReference>NameWithDashes</elementReference>
-                </value>
-            </inputParameters>
-            <label>Create Slack Channel</label>
-            <requiresAsyncProcessing>false</requiresAsyncProcessing>
-        </stageSteps>
     </orchestratedStages>
     <processMetadataValues>
         <name>BuilderType</name>
