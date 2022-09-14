@@ -11,7 +11,7 @@
             <name>VIP</name>
             <conditionLogic>and</conditionLogic>
             <conditions>
-                <leftValueReference>Agent_Tasks_Flow.Outputs.Refreshed_VIP_Status</leftValueReference>
+                <leftValueReference>Agent_Task_Flow_run.Outputs.Refreshed_VIP_Status</leftValueReference>
                 <operator>EqualTo</operator>
                 <rightValue>
                     <booleanValue>true</booleanValue>
@@ -40,8 +40,22 @@
         </connector>
         <exitConditionLogic>and</exitConditionLogic>
         <stageSteps>
-            <name>Agent_Tasks_Flow</name>
-            <actionName>Completed_Agent_Tasks_Product_Interest</actionName>
+            <name>Get_Username</name>
+            <actionName>User_Get_by_Alias</actionName>
+            <actionType>stepBackground</actionType>
+            <entryConditionLogic>and</entryConditionLogic>
+            <inputParameters>
+                <name>alias</name>
+                <value>
+                    <stringValue>UUser</stringValue>
+                </value>
+            </inputParameters>
+            <label>Get Username</label>
+            <requiresAsyncProcessing>false</requiresAsyncProcessing>
+        </stageSteps>
+        <stageSteps>
+            <name>Agent_Task_Flow_run</name>
+            <actionName>Agent_Tasks_Product_Interest</actionName>
             <actionType>stepInteractive</actionType>
             <assignees>
                 <assignee>
@@ -50,6 +64,13 @@
                 <assigneeType>User</assigneeType>
             </assignees>
             <entryConditionLogic>and</entryConditionLogic>
+            <entryConditions>
+                <leftValueReference>Get_Username.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Completed</stringValue>
+                </rightValue>
+            </entryConditions>
             <inputParameters>
                 <name>ActionInput__RecordId</name>
                 <value>
@@ -63,20 +84,6 @@
                 </value>
             </inputParameters>
             <label>Agent Task Flow</label>
-            <requiresAsyncProcessing>false</requiresAsyncProcessing>
-        </stageSteps>
-        <stageSteps>
-            <name>Get_Username</name>
-            <actionName>User_Get_by_Alias</actionName>
-            <actionType>stepBackground</actionType>
-            <entryConditionLogic>and</entryConditionLogic>
-            <inputParameters>
-                <name>alias</name>
-                <value>
-                    <stringValue>UUser</stringValue>
-                </value>
-            </inputParameters>
-            <label>Get Username</label>
             <requiresAsyncProcessing>false</requiresAsyncProcessing>
         </stageSteps>
     </orchestratedStages>
