@@ -106,14 +106,6 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>VIPDetailsChart</name>
-            <extensionName>c:cfVipDetails</extensionName>
-            <fieldType>ComponentInstance</fieldType>
-            <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
-            <isRequired>true</isRequired>
-            <storeOutputAutomatically>true</storeOutputAutomatically>
-        </fields>
-        <fields>
             <name>Is_the_Lead_a_VIP</name>
             <choiceReferences>Yes</choiceReferences>
             <choiceReferences>No</choiceReferences>

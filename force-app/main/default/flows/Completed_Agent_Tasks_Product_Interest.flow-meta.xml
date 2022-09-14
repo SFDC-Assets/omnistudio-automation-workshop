@@ -106,8 +106,8 @@
             <isRequired>true</isRequired>
         </fields>
         <fields>
-            <name>VIPDetails</name>
-            <extensionName>c:cfVipDetails</extensionName>
+            <name>VIPDetailsChart</name>
+            <extensionName>c:cfCompletedVipDetails</extensionName>
             <fieldType>ComponentInstance</fieldType>
             <inputsOnNextNavToAssocScrn>UseStoredValues</inputsOnNextNavToAssocScrn>
             <isRequired>true</isRequired>
