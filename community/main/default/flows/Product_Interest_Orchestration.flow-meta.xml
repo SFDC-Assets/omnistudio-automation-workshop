@@ -93,20 +93,6 @@
         <locationX>50</locationX>
         <locationY>551</locationY>
         <exitConditionLogic>and</exitConditionLogic>
-        <stageSteps>
-            <name>Slack_Channel_Create_Step</name>
-            <actionName>Create_Lead_Slack_Channel</actionName>
-            <actionType>stepBackground</actionType>
-            <entryConditionLogic>and</entryConditionLogic>
-            <inputParameters>
-                <name>LeadAccountName</name>
-                <value>
-                    <elementReference>NameWithDashes</elementReference>
-                </value>
-            </inputParameters>
-            <label>Auto Create Slack Channel</label>
-            <requiresAsyncProcessing>false</requiresAsyncProcessing>
-        </stageSteps>
     </orchestratedStages>
     <processMetadataValues>
         <name>BuilderType</name>

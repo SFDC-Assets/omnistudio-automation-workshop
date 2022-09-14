@@ -14,6 +14,7 @@ sfdx force:package:install --package=04t4W000002kepJ --wait 15 --noprompt
 sfdx shane:user:password:set -p salesforce1 -g User -l User
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FinancialServicesCloudExtension
+sfdx force:user:permset:assign -n Slack_Permissions
 
 sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
 
