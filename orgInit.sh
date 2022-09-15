@@ -9,16 +9,14 @@ sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --us
 sfdx force:package:install --package=04t1E000000jb9R --wait 15
 sfdx force:package:install --package=04t1E000001Iql5 --wait 2
 
+sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
+
 #install omnistudio 238.3
 sfdx force:package:install --package=04t4W000002kepJ --wait 15 --noprompt
 sfdx shane:user:password:set -p salesforce1 -g User -l User
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FinancialServicesCloudExtension
 sfdx force:user:permset:assign -n Slack_Permissions
-
-sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
-
-sleep 300
 
 #push the utility metadata service class
 sfdx force:source:deploy -m ApexClass:MetadataService
