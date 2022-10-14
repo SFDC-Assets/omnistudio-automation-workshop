@@ -5,11 +5,11 @@
 #create scratch org
 sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix omni -o studio.workshop
 
+sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
+
 #install FSC
 sfdx force:package:install --package=04t1E000000jb9R --wait 15
 sfdx force:package:install --package=04t1E000001Iql5 --wait 2
-
-sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
 
 #install omnistudio 238.3
 sfdx force:package:install --package=04t4W000002kepJ --wait 15 --noprompt
