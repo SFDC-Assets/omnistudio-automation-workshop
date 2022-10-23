@@ -44,7 +44,7 @@ const utils = require('./utils');
     page.setDefaultTimeout(240000);
     await page.goto(`${frontdoor.result.url}`);
 
-    await utils.sleep(120000);
+    await utils.sleep(10000);
 
     // await page.waitFor(10000);
     //go to /lightning/setup/OmniStudioSettings/home
