@@ -39,14 +39,16 @@ const utils = require('./utils');
     var parsedFqdn = fqdn.split('.');
 
 
-    const timeout = 30000;
+    const timeout = 60000;
     const page = await browser.newPage();
-    page.setDefaultTimeout(60000);
+    page.setDefaultTimeout(240000);
     await page.goto(`${frontdoor.result.url}`);
 
-    //await page.waitFor(10000);
+    await utils.sleep(120000);
+
+    // await page.waitFor(10000);
     //go to /lightning/setup/OmniStudioSettings/home
-    var targetOSSettings = `https://${parsedFqdn[0]}.lightning.force.com/lightning/setup/OmniStudioSettings/home`;
+    var targetOSSettings = `https://${parsedFqdn[0]}.scratch.lightning.force.com/lightning/setup/OmniStudioSettings/home`;
     console.log(targetOSSettings)
 
     await Promise.all([
@@ -56,8 +58,7 @@ const utils = require('./utils');
     ]);
 
     await page.setViewport({ width: 1200, height: 837 });
-    await utils.sleep(60000);
-
+    await utils.sleep(30000);
 
     //OmniStudio Runtime
     try {
@@ -69,12 +70,24 @@ const utils = require('./utils');
         console.log(error);
     }
 
-    await utils.sleep(60000);
+    await utils.sleep(30000);
 
     //Standard OmniStudio
     try {
         await page.evaluateHandle(
             () => document.querySelectorAll('runtime_omnistudio-pref-toggle')[1].shadowRoot.querySelector('lightning-input').shadowRoot.querySelector('input').click()
+        );
+
+    } catch (error) {
+        console.log(error);
+    }
+
+    await utils.sleep(30000);
+
+    //Standard OmniStudio
+    try {
+        await page.evaluateHandle(
+            () => document.querySelectorAll('runtime_omnistudio-pref-toggle')[2].shadowRoot.querySelector('lightning-input').shadowRoot.querySelector('input').click()
         );
 
     } catch (error) {
