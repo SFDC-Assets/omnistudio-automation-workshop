@@ -8,7 +8,7 @@ sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --us
 sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
 
 #install FSC
-sfdx force:package:install --package=4t1E000001IrkoQAC --wait 15
+sfdx force:package:install --package=4t1E000001IrkoQ --wait 15
 sfdx force:package:install --package=04t1E000001Iql5 --wait 2
 
 #install omnistudio 238.3
