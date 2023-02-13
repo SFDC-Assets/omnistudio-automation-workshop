@@ -1,6 +1,7 @@
 {
   "appPageId" : "a8caf1c7-f6fb-4bd9-a39d-73702775e7ef",
   "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
   "id" : "430231a0-6bf2-4c7e-a16b-c66d8c7c17cb",
   "label" : "Create Record",
   "regions" : [ {

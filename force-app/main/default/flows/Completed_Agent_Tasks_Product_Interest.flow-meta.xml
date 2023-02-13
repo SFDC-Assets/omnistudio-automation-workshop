@@ -38,59 +38,14 @@
         </value>
     </processMetadataValues>
     <processType>Flow</processType>
-    <recordLookups>
-        <name>GetLead</name>
-        <label>GetLead</label>
-        <locationX>176</locationX>
-        <locationY>158</locationY>
-        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
-        <connector>
-            <targetReference>Agent_Tasks_Product_Interest</targetReference>
-        </connector>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>LeadId</elementReference>
-            </value>
-        </filters>
-        <getFirstRecordOnly>true</getFirstRecordOnly>
-        <object>Lead</object>
-        <storeOutputAutomatically>true</storeOutputAutomatically>
-    </recordLookups>
-    <recordUpdates>
-        <name>Update_Lead</name>
-        <label>Update Lead</label>
-        <locationX>176</locationX>
-        <locationY>398</locationY>
-        <filterLogic>and</filterLogic>
-        <filters>
-            <field>Id</field>
-            <operator>EqualTo</operator>
-            <value>
-                <elementReference>LeadId</elementReference>
-            </value>
-        </filters>
-        <inputAssignments>
-            <field>VIP__c</field>
-            <value>
-                <booleanValue>true</booleanValue>
-            </value>
-        </inputAssignments>
-        <object>Lead</object>
-    </recordUpdates>
     <screens>
         <name>Agent_Tasks_Product_Interest</name>
         <label>Agent Tasks - Product Interest</label>
         <locationX>176</locationX>
-        <locationY>278</locationY>
+        <locationY>158</locationY>
         <allowBack>true</allowBack>
         <allowFinish>true</allowFinish>
         <allowPause>true</allowPause>
-        <connector>
-            <targetReference>Update_Lead</targetReference>
-        </connector>
         <fields>
             <name>Review_Customer_Request</name>
             <dataType>Boolean</dataType>
@@ -113,15 +68,6 @@
             <isRequired>true</isRequired>
             <storeOutputAutomatically>true</storeOutputAutomatically>
         </fields>
-        <fields>
-            <name>Is_the_Lead_a_VIP</name>
-            <choiceReferences>Yes</choiceReferences>
-            <choiceReferences>No</choiceReferences>
-            <dataType>Boolean</dataType>
-            <fieldText>Is the Lead a VIP?</fieldText>
-            <fieldType>RadioButtons</fieldType>
-            <isRequired>false</isRequired>
-        </fields>
         <showFooter>true</showFooter>
         <showHeader>true</showHeader>
     </screens>
@@ -129,7 +75,7 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>GetLead</targetReference>
+            <targetReference>Agent_Tasks_Product_Interest</targetReference>
         </connector>
     </start>
     <status>Active</status>
@@ -139,15 +85,5 @@
         <isCollection>false</isCollection>
         <isInput>true</isInput>
         <isOutput>true</isOutput>
-    </variables>
-    <variables>
-        <name>Refreshed_VIP_Status</name>
-        <dataType>Boolean</dataType>
-        <isCollection>false</isCollection>
-        <isInput>false</isInput>
-        <isOutput>true</isOutput>
-        <value>
-            <elementReference>Is_the_Lead_a_VIP</elementReference>
-        </value>
     </variables>
 </Flow>

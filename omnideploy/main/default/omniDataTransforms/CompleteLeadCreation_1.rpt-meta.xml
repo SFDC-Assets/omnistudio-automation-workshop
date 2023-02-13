@@ -1,37 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <OmniDataTransform xmlns="http://soap.sforce.com/2006/04/metadata">
-    <active>true</active>
+    <active>false</active>
     <assignmentRulesUsed>false</assignmentRulesUsed>
     <deletedOnSuccess>false</deletedOnSuccess>
     <errorIgnored>false</errorIgnored>
     <expectedInputJson>{
-    &quot;timeStamp&quot;: &quot;2022-09-08T19:24:32.531Z&quot;,
-    &quot;userProfile&quot;: &quot;System Administrator&quot;,
-    &quot;userTimeZoneName&quot;: &quot;America/Los_Angeles&quot;,
-    &quot;userTimeZone&quot;: &quot;-420&quot;,
-    &quot;userCurrencyCode&quot;: &quot;USD&quot;,
-    &quot;userName&quot;: &quot;omni2@studio.workshop&quot;,
-    &quot;userId&quot;: &quot;0055400000DlBtGAAV&quot;,
-    &quot;ProductSelection&quot;: {
-        &quot;BlProduct1&quot;: {},
-        &quot;BlProduct2&quot;: null,
-        &quot;BlProduct3&quot;: null,
-        &quot;BlProduct4&quot;: null,
-        &quot;Description&quot;: &quot;Product 1&quot;
-    },
-    &quot;PersonalDetails&quot;: {
-        &quot;FirstName&quot;: &quot;John&quot;,
-        &quot;LastName&quot;: &quot;Smith&quot;,
-        &quot;Email&quot;: &quot;js@email.com&quot;,
-        &quot;Phone&quot;: &quot;5555555555&quot;,
-        &quot;FullAddress-Block&quot;: {
-            &quot;FullAddress&quot;: &quot;123 Main St, Edison, NJ 08817, USA&quot;,
-            &quot;Street&quot;: &quot;123 Main Street&quot;,
-            &quot;City&quot;: &quot;Edison&quot;,
-            &quot;State&quot;: &quot;NJ&quot;,
-            &quot;PostalCode&quot;: &quot;08817&quot;
-        }
+  &quot;timeStamp&quot; : &quot;2022-09-08T19:24:32.531Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;omni2@studio.workshop&quot;,
+  &quot;userId&quot; : &quot;0055400000DlBtGAAV&quot;,
+  &quot;ProductSelection&quot; : {
+    &quot;BlProduct1&quot; : { },
+    &quot;BlProduct2&quot; : null,
+    &quot;BlProduct3&quot; : null,
+    &quot;BlProduct4&quot; : null,
+    &quot;Description&quot; : &quot;Product 1&quot;
+  },
+  &quot;PersonalDetails&quot; : {
+    &quot;FirstName&quot; : &quot;John&quot;,
+    &quot;LastName&quot; : &quot;Smith&quot;,
+    &quot;Email&quot; : &quot;js@email.com&quot;,
+    &quot;Phone&quot; : &quot;5555555555&quot;,
+    &quot;FullAddress-Block&quot; : {
+      &quot;FullAddress&quot; : &quot;123 Main St, Edison, NJ 08817, USA&quot;,
+      &quot;Street&quot; : &quot;123 Main Street&quot;,
+      &quot;City&quot; : &quot;Edison&quot;,
+      &quot;State&quot; : &quot;NJ&quot;,
+      &quot;PostalCode&quot; : &quot;08817&quot;
     }
+  }
 }</expectedInputJson>
     <fieldLevelSecurityEnabled>false</fieldLevelSecurityEnabled>
     <inputType>JSON</inputType>
@@ -40,13 +40,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>CompleteLeadCreationCustom5436</globalKey>
-        <inputFieldName>PersonalDetails:FullAddress-Block:Street</inputFieldName>
+        <globalKey>CompleteLeadCreationCustom4001</globalKey>
+        <inputFieldName>PersonalDetails:LastName</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>CompleteLeadCreation</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Street</outputFieldName>
+        <outputFieldName>LastName</outputFieldName>
         <outputObjectName>Lead</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -54,13 +54,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>CompleteLeadCreationCustom6711</globalKey>
-        <inputFieldName>PersonalDetails:FullAddress-Block:State</inputFieldName>
+        <globalKey>CompleteLeadCreationCustom7081</globalKey>
+        <inputFieldName>ProductSelection:Description</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>CompleteLeadCreation</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>State</outputFieldName>
+        <outputFieldName>Description</outputFieldName>
         <outputObjectName>Lead</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -97,13 +97,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>CompleteLeadCreationCustom4001</globalKey>
-        <inputFieldName>PersonalDetails:LastName</inputFieldName>
+        <globalKey>CompleteLeadCreationCustom7983</globalKey>
+        <inputFieldName>PersonalDetails:FullAddress-Block:PostalCode</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>CompleteLeadCreation</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>LastName</outputFieldName>
+        <outputFieldName>PostalCode</outputFieldName>
         <outputObjectName>Lead</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -111,13 +111,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>CompleteLeadCreationCustom7081</globalKey>
-        <inputFieldName>ProductSelection:Description</inputFieldName>
+        <globalKey>CompleteLeadCreationCustom2827</globalKey>
+        <inputFieldName>PersonalDetails:FirstName</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>CompleteLeadCreation</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>Description</outputFieldName>
+        <outputFieldName>FirstName</outputFieldName>
         <outputObjectName>Lead</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -153,13 +153,13 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>CompleteLeadCreationCustom7983</globalKey>
-        <inputFieldName>PersonalDetails:FullAddress-Block:PostalCode</inputFieldName>
+        <globalKey>CompleteLeadCreationCustom5436</globalKey>
+        <inputFieldName>PersonalDetails:FullAddress-Block:Street</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>CompleteLeadCreation</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>PostalCode</outputFieldName>
+        <outputFieldName>Street</outputFieldName>
         <outputObjectName>Lead</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
@@ -167,44 +167,44 @@
     <omniDataTransformItem>
         <disabled>false</disabled>
         <filterGroup>0.0</filterGroup>
-        <globalKey>CompleteLeadCreationCustom2827</globalKey>
-        <inputFieldName>PersonalDetails:FirstName</inputFieldName>
+        <globalKey>CompleteLeadCreationCustom6711</globalKey>
+        <inputFieldName>PersonalDetails:FullAddress-Block:State</inputFieldName>
         <inputObjectQuerySequence>0.0</inputObjectQuerySequence>
         <linkedObjectSequence>0.0</linkedObjectSequence>
         <name>CompleteLeadCreation</name>
         <outputCreationSequence>1.0</outputCreationSequence>
-        <outputFieldName>FirstName</outputFieldName>
+        <outputFieldName>State</outputFieldName>
         <outputObjectName>Lead</outputObjectName>
         <requiredForUpsert>false</requiredForUpsert>
         <upsertKey>false</upsertKey>
     </omniDataTransformItem>
     <outputType>SObject</outputType>
     <previewJsonData>{
-  &quot;timeStamp&quot;: &quot;2022-09-08T19:24:32.531Z&quot;,
-  &quot;userProfile&quot;: &quot;System Administrator&quot;,
-  &quot;userTimeZoneName&quot;: &quot;America/Los_Angeles&quot;,
-  &quot;userTimeZone&quot;: &quot;-420&quot;,
-  &quot;userCurrencyCode&quot;: &quot;USD&quot;,
-  &quot;userName&quot;: &quot;omni2@studio.workshop&quot;,
-  &quot;userId&quot;: &quot;0055400000DlBtGAAV&quot;,
-  &quot;ProductSelection&quot;: {
-    &quot;BlProduct1&quot;: {},
-    &quot;BlProduct2&quot;: null,
-    &quot;BlProduct3&quot;: null,
-    &quot;BlProduct4&quot;: null,
-    &quot;Description&quot;: &quot;Product 4&quot;
+  &quot;timeStamp&quot; : &quot;2022-09-08T19:24:32.531Z&quot;,
+  &quot;userProfile&quot; : &quot;System Administrator&quot;,
+  &quot;userTimeZoneName&quot; : &quot;America/Los_Angeles&quot;,
+  &quot;userTimeZone&quot; : &quot;-420&quot;,
+  &quot;userCurrencyCode&quot; : &quot;USD&quot;,
+  &quot;userName&quot; : &quot;omni2@studio.workshop&quot;,
+  &quot;userId&quot; : &quot;0055400000DlBtGAAV&quot;,
+  &quot;ProductSelection&quot; : {
+    &quot;BlProduct1&quot; : { },
+    &quot;BlProduct2&quot; : null,
+    &quot;BlProduct3&quot; : null,
+    &quot;BlProduct4&quot; : null,
+    &quot;Description&quot; : &quot;Product 4&quot;
   },
-  &quot;PersonalDetails&quot;: {
-    &quot;FirstName&quot;: &quot;Johnzzze&quot;,
-    &quot;LastName&quot;: &quot;Smithzzze&quot;,
-    &quot;Email&quot;: &quot;jszzee@email.com&quot;,
-    &quot;Phone&quot;: &quot;5556564988&quot;,
-    &quot;FullAddress-Block&quot;: {
-      &quot;FullAddress&quot;: &quot;1293 Main St, Edison, NJ 08817, USA&quot;,
-      &quot;Street&quot;: &quot;1298 Main St&quot;,
-      &quot;City&quot;: &quot;Edisonz&quot;,
-      &quot;State&quot;: &quot;NJ&quot;,
-      &quot;PostalCode&quot;: &quot;08820&quot;
+  &quot;PersonalDetails&quot; : {
+    &quot;FirstName&quot; : &quot;Johnzzze&quot;,
+    &quot;LastName&quot; : &quot;Smithzzze&quot;,
+    &quot;Email&quot; : &quot;jszzee@email.com&quot;,
+    &quot;Phone&quot; : &quot;5556564988&quot;,
+    &quot;FullAddress-Block&quot; : {
+      &quot;FullAddress&quot; : &quot;1293 Main St, Edison, NJ 08817, USA&quot;,
+      &quot;Street&quot; : &quot;1298 Main St&quot;,
+      &quot;City&quot; : &quot;Edisonz&quot;,
+      &quot;State&quot; : &quot;NJ&quot;,
+      &quot;PostalCode&quot; : &quot;08820&quot;
     }
   }
 }</previewJsonData>

@@ -1,6 +1,7 @@
 {
   "appPageId" : "a8caf1c7-f6fb-4bd9-a39d-73702775e7ef",
   "componentName" : "siteforce:sldsOneColLayout",
+  "dataProviders" : [ ],
   "id" : "a514794d-34f7-472f-8940-99cff2e41b09",
   "label" : "Flow",
   "regions" : [ {
@@ -11,7 +12,6 @@
     "components" : [ {
       "componentAttributes" : {
         "flowArguments" : "",
-        "flowLayout" : "oneColumn",
         "flowName" : "{!flowName}"
       },
       "componentName" : "forceCommunity:flowCommunity",

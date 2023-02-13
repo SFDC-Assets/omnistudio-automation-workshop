@@ -1,0 +1,11 @@
+{
+  "activeViewId" : "6274469c-7a14-4fa3-abf8-28e5306c58cd",
+  "appPageId" : "a8caf1c7-f6fb-4bd9-a39d-73702775e7ef",
+  "configurationTags" : [ ],
+  "id" : "743661bd-0fa6-433e-8d53-af8737079c62",
+  "label" : "Mainframe",
+  "pageAccess" : "UseParent",
+  "routeType" : "custom-mainframe",
+  "type" : "route",
+  "urlPrefix" : "mainframe"
+}

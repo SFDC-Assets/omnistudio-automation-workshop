@@ -1,9 +1,9 @@
 {
-    "orgName": "FSC Scratch Org with Communities Capabilities",
+    "orgName": "Omnistudio Workshop",
     "edition": "Enterprise",
     "hasSampleData": "true",
-    "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner","ServiceCloud", "EnableSetPasswordInApi","Communities","PersonAccounts","ContactsToMultipleAccounts", "FinancialServicesUser:2", "FinancialServicesCommunityUser:1", "FinancialServicesInsuranceUser"],
-    "adminEmail": "fsc@example.com",
+    "features": ["AuthorApex", "DebugApex", "OmniStudioDesigner","InsuranceCalculationUser","DocGen","DocGenDesigner","DocGenInd","ServiceCloud", "EnableSetPasswordInApi","Communities","PersonAccounts","ContactsToMultipleAccounts", "FinancialServicesUser:2", "FinancialServicesCommunityUser:1", "FinancialServicesInsuranceUser"],
+    "adminEmail": "omnistudio@example.com",
     "settings": {
       "lightningExperienceSettings": {
         "enableS1DesktopEnabled": true
