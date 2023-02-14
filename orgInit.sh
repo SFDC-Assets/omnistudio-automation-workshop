@@ -5,16 +5,16 @@
 #create scratch org
 sfdx shane:org:create -f config/project-scratch-def.json -d 1 -s --wait 60 --userprefix omni -o studio.workshop
 
-#install OmniStudio - 238
-sfdx force:package:install --package=04t4W000002keqb --wait 20 -r
-
-sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
-
 sfdx force:package:install --package=04t1E00000127We --wait 20
 sfdx force:package:install --package=04t1E000001Iql5 --wait 2
 sfdx shane:user:password:set -p salesforce1 -g User -l User
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FinancialServicesCloudExtension
+
+sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
+
+#install OmniStudio - 238
+sfdx force:package:install --package=04t4W000002keqb --wait 20 -r
 
 #push the utility metadata service class
 sfdx force:source:deploy -m ApexClass:MetadataService
