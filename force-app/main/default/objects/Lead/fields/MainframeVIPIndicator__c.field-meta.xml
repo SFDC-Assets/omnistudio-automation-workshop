@@ -3,7 +3,7 @@
     <fullName>MainframeVIPIndicator__c</fullName>
     <defaultValue>true</defaultValue>
     <externalId>false</externalId>
-    <label>Mainframe VIP Indicator</label>
+    <label>MFVIND</label>
     <trackFeedHistory>false</trackFeedHistory>
     <type>Checkbox</type>
 </CustomField>
