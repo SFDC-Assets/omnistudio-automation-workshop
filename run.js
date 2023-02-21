@@ -70,17 +70,17 @@ const utils = require('./utils');
         console.log(error);
     }
 
-    await utils.sleep(30000);
+    // await utils.sleep(30000);
 
     //Standard OmniStudio
-    try {
-        await page.evaluateHandle(
-            () => document.querySelectorAll('runtime_omnistudio-pref-toggle')[1].shadowRoot.querySelector('lightning-input').shadowRoot.querySelector('input').click()
-        );
+    // try {
+    //     await page.evaluateHandle(
+    //         () => document.querySelectorAll('runtime_omnistudio-pref-toggle')[1].shadowRoot.querySelector('lightning-input').shadowRoot.querySelector('input').click()
+    //     );
 
-    } catch (error) {
-        console.log(error);
-    }
+    // } catch (error) {
+    //     console.log(error);
+    // }
 
     await browser.close();
 })();
