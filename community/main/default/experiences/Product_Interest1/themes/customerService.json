@@ -1,6 +1,6 @@
 {
   "activeBrandingSetId" : "4e146ef9-1023-47e8-bc0e-4010c7dcd7f3",
-  "customCSS" : "body  {\n  background-image: url(\"https://lightningappcookbook.salesforce.com/themes/custom/cookbook/images/backgrounds/recipe-header-hill.png\")  !important;background-size:100% 80% \n}\n\n .siteforceDynamicLayout.siteforceContentArea {background:unset !important}\n\nc-build-product-selection-english article[c-buildproductselectionenglish_buildproductselectionenglish] {background:unset !important;}\n\nomniscript-button > button { border-color:transparent !important; border-radius:25px !important;  text-transform:uppercase !important;}",
+  "customCSS" : "body  {\n  background-image: url(\"https://lightningappcookbook.salesforce.com/themes/custom/cookbook/images/backgrounds/recipe-header-hill.png\")  !important;background-size:100% 80% \n}\n\n .siteforceDynamicLayout.siteforceContentArea {background:unset !important}\n\nc-build-product-selection-english article[c-buildproductselectionenglish_buildproductselectionenglish] {background:unset !important;}\nc-complete-product-selection-english article[c-completeproductselectionenglish_completeproductselectionenglish] {background:unset !important;}\n\nomniscript-button > button { border-color:transparent !important; border-radius:25px !important;  text-transform:uppercase !important;}",
   "developerName" : "service",
   "id" : "ca682357-f8c3-4726-b51b-b87990dcca64",
   "label" : "Customer Service",

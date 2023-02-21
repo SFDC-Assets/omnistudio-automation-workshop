@@ -25,6 +25,22 @@
       "componentName" : "forceCommunity:section",
       "id" : "60cfe871-3f35-493d-a779-97ec3cb54da3",
       "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "dir" : "ltr",
+            "flexipageRegionWidth" : "LARGE",
+            "inline" : false,
+            "inlineLabel" : "Launch Complete/ProductSelection",
+            "inlineVariant" : "brand",
+            "layout" : "lightning",
+            "recordId" : "{!recordId}"
+          },
+          "componentName" : "c:completeProductSelectionEnglish",
+          "id" : "0628e3db-3a7f-46f9-a4e4-412041e6c509",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
         "id" : "83dc5543-2e8b-496e-9f31-c143662af467",
         "regionLabel" : "Column 1",
         "regionName" : "1",
