@@ -17,8 +17,8 @@
             <booleanValue>true</booleanValue>
         </value>
     </choices>
-    <interviewLabel>Agent Tasks - Product Interest {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Agent Tasks - Product Interest</label>
+    <interviewLabel>Agent Tasks - ProductInterest {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Agent Tasks - ProductInterest</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>
@@ -39,8 +39,8 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <screens>
-        <name>Agent_Tasks_Product_Interest</name>
-        <label>Agent Tasks - Product Interest</label>
+        <name>Agent_Tasks_ProductInterest</name>
+        <label>Agent Tasks - ProductInterest</label>
         <locationX>176</locationX>
         <locationY>158</locationY>
         <allowBack>false</allowBack>
@@ -67,7 +67,7 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Agent_Tasks_Product_Interest</targetReference>
+            <targetReference>Agent_Tasks_ProductInterest</targetReference>
         </connector>
     </start>
     <status>Active</status>

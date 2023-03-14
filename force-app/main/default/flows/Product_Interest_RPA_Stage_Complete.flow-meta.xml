@@ -52,8 +52,8 @@
             <label>Yes</label>
         </rules>
     </decisions>
-    <interviewLabel>Product Interest - RPA Stage Complete {!$Flow.CurrentDateTime}</interviewLabel>
-    <label>Product Interest - RPA Stage Complete</label>
+    <interviewLabel>ProductInterest - RPA Stage Complete {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>ProductInterest - RPA Stage Complete</label>
     <processMetadataValues>
         <name>BuilderType</name>
         <value>

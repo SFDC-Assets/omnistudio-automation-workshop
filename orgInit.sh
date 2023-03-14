@@ -11,7 +11,7 @@ sfdx shane:user:password:set -p salesforce1 -g User -l User
 sfdx force:user:permset:assign -n FinancialServicesCloudStandard
 sfdx force:user:permset:assign -n FinancialServicesCloudExtension
 
-sfdx force:community:create --name 'Product Interest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
+sfdx force:community:create --name 'ProductInterest' --templatename 'Customer Service' --urlpathprefix ProductInterestHome
 
 #install OmniStudio - 238
 sfdx force:package:install --package=04t4W000002keqb --wait 20 -r

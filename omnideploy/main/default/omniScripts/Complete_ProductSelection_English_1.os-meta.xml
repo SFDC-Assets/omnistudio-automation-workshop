@@ -16,7 +16,7 @@
             <level>1.0</level>
             <name>ConfirmationMessage</name>
             <omniProcessVersionNumber>0.0</omniProcessVersionNumber>
-            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Messaging1&quot;,&quot;validateExpression&quot;:null,&quot;messages&quot;:[{&quot;value&quot;:true,&quot;type&quot;:&quot;Success&quot;,&quot;text&quot;:&quot;Product Interest Successfully Submitted!&quot;,&quot;active&quot;:true},{&quot;value&quot;:false,&quot;type&quot;:&quot;Requirement&quot;,&quot;text&quot;:&quot;&quot;,&quot;active&quot;:false}],&quot;hideLabel&quot;:true,&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;}</propertySetConfig>
+            <propertySetConfig>{&quot;controlWidth&quot;:12,&quot;label&quot;:&quot;Messaging1&quot;,&quot;validateExpression&quot;:null,&quot;messages&quot;:[{&quot;value&quot;:true,&quot;type&quot;:&quot;Success&quot;,&quot;text&quot;:&quot;ProductInterest Successfully Submitted!&quot;,&quot;active&quot;:true},{&quot;value&quot;:false,&quot;type&quot;:&quot;Requirement&quot;,&quot;text&quot;:&quot;&quot;,&quot;active&quot;:false}],&quot;hideLabel&quot;:true,&quot;show&quot;:null,&quot;HTMLTemplateId&quot;:&quot;&quot;}</propertySetConfig>
             <sequenceNumber>0.0</sequenceNumber>
             <type>Validation</type>
         </childElements>
