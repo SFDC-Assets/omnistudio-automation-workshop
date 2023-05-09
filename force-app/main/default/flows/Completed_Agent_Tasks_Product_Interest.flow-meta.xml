@@ -39,7 +39,7 @@
     </processMetadataValues>
     <processType>Flow</processType>
     <screens>
-        <name>Agent_Tasks_ProductInterest</name>
+        <name>Agent_Tasks_Product_Interest</name>
         <label>Agent Tasks - ProductInterest</label>
         <locationX>176</locationX>
         <locationY>158</locationY>
@@ -75,7 +75,7 @@
         <locationX>50</locationX>
         <locationY>0</locationY>
         <connector>
-            <targetReference>Agent_Tasks_ProductInterest</targetReference>
+            <targetReference>Agent_Tasks_Product_Interest</targetReference>
         </connector>
     </start>
     <status>Active</status>

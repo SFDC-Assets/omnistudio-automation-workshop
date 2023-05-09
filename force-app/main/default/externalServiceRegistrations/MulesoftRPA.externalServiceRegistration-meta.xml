@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ExternalServiceRegistration xmlns="http://soap.sforce.com/2006/04/metadata">
+    <label>MulesoftRPA</label>
+    <namedCredentialReference>RpaBot</namedCredentialReference>
+    <operations>
+        <active>true</active>
+        <name>getvipx5fstatus</name>
+    </operations>
+    <operations>
+        <active>true</active>
+        <name>postvipx5fstatus</name>
+    </operations>
+    <registrationProviderType>Custom</registrationProviderType>
+    <schema>{
+  &quot;swagger&quot;: &quot;2.0&quot;,
+  &quot;info&quot;: {
+    &quot;title&quot;: &quot;rpa_api&quot;,
+    &quot;version&quot;: &quot;v1&quot;
+  },
+  &quot;host&quot;: &quot;better-together-bot.us-e2.cloudhub.io&quot;,
+  &quot;basePath&quot;: &quot;/api&quot;,
+  &quot;schemes&quot;: [
+    &quot;http&quot;
+  ],
+  &quot;paths&quot;: {
+    &quot;/vip_status&quot;: {
+      &quot;post&quot;: {
+        &quot;consumes&quot;: [
+          &quot;application/json&quot;
+        ],
+        &quot;parameters&quot;: [{
+          &quot;x-amf-mediaType&quot;: &quot;application/json&quot;,
+          &quot;in&quot;: &quot;body&quot;,
+          &quot;name&quot;: &quot;generated&quot;,
+          &quot;schema&quot;: {
+            &quot;example&quot;: {
+              &quot;callbackUri&quot;: &quot;&quot;,
+              &quot;inputArguments&quot;: {
+                &quot;leadId&quot;: &quot;&quot;,
+                &quot;experinceCloudUrl&quot;: &quot;&quot;,
+                &quot;salesforceUserId&quot;: &quot;&quot;,
+                &quot;salesforcePassword&quot;: &quot;&quot;
+              }
+            },
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;additionalProperties&quot;: true,
+            &quot;required&quot;: [
+              &quot;callbackUri&quot;,
+              &quot;inputArguments&quot;
+            ],
+            &quot;properties&quot;: {
+              &quot;callbackUri&quot;: {
+                &quot;title&quot;: &quot;callback&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;inputArguments&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;additionalProperties&quot;: true,
+                &quot;required&quot;: [
+                  &quot;leadId&quot;,
+                  &quot;experinceCloudUrl&quot;,
+                  &quot;salesforceUserId&quot;,
+                  &quot;salesforcePassword&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;leadId&quot;: {
+                    &quot;title&quot;: &quot;leadId&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;experinceCloudUrl&quot;: {
+                    &quot;title&quot;: &quot;CloudUrl&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;salesforceUserId&quot;: {
+                    &quot;title&quot;: &quot;UserId&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;salesforcePassword&quot;: {
+                    &quot;title&quot;: &quot;Password&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                }
+              }
+            }
+          }
+        }],
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;&quot;
+          }
+        }
+      },
+      &quot;get&quot;: {
+        &quot;consumes&quot;: [
+          &quot;application/json&quot;
+        ],
+        &quot;parameters&quot;: [{
+          &quot;x-amf-mediaType&quot;: &quot;application/json&quot;,
+          &quot;in&quot;: &quot;body&quot;,
+          &quot;name&quot;: &quot;generated&quot;,
+          &quot;schema&quot;: {
+            &quot;example&quot;: {
+              &quot;callbackUri&quot;: &quot;&quot;,
+              &quot;inputArguments&quot;: {
+                &quot;leadId&quot;: &quot;&quot;,
+                &quot;experinceCloudUrl&quot;: &quot;&quot;,
+                &quot;salesforceUserId&quot;: &quot;&quot;,
+                &quot;salesforcePassword&quot;: &quot;&quot;
+              }
+            },
+            &quot;type&quot;: &quot;object&quot;,
+            &quot;additionalProperties&quot;: true,
+            &quot;required&quot;: [
+              &quot;callbackUri&quot;,
+              &quot;inputArguments&quot;
+            ],
+            &quot;properties&quot;: {
+              &quot;callbackUri&quot;: {
+                &quot;title&quot;: &quot;callback&quot;,
+                &quot;type&quot;: &quot;string&quot;
+              },
+              &quot;inputArguments&quot;: {
+                &quot;type&quot;: &quot;object&quot;,
+                &quot;additionalProperties&quot;: true,
+                &quot;required&quot;: [
+                  &quot;leadId&quot;,
+                  &quot;experinceCloudUrl&quot;,
+                  &quot;salesforceUserId&quot;,
+                  &quot;salesforcePassword&quot;
+                ],
+                &quot;properties&quot;: {
+                  &quot;leadId&quot;: {
+                    &quot;title&quot;: &quot;leadId&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;experinceCloudUrl&quot;: {
+                    &quot;title&quot;: &quot;CloudUrl&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;salesforceUserId&quot;: {
+                    &quot;title&quot;: &quot;UserId&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  },
+                  &quot;salesforcePassword&quot;: {
+                    &quot;title&quot;: &quot;Password&quot;,
+                    &quot;type&quot;: &quot;string&quot;
+                  }
+                }
+              }
+            }
+          }
+        }],
+        &quot;responses&quot;: {
+          &quot;200&quot;: {
+            &quot;description&quot;: &quot;&quot;
+          }
+        }
+      }
+    }
+  }
+}</schema>
+    <schemaType>OpenApi</schemaType>
+    <serviceBinding>{&quot;compatibleMediaTypes&quot;:{}}</serviceBinding>
+    <status>Incomplete</status>
+</ExternalServiceRegistration>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
-<apiVersion>54.0</apiVersion>
+<apiVersion>55.0</apiVersion>
 <runtimeNamespace>omnistudio</runtimeNamespace>
 <isExposed>true</isExposed>
-<description>Vlocity OmniScript Auto-generated - 0jN8I000000Gn7nUAC</description>
+<description>Vlocity OmniScript Auto-generated - 0jN040000008PR7EAM</description>
 <masterLabel>Complete/ProductSelection/English</masterLabel>
 <targets>
 <target>lightningCommunity__Page</target>

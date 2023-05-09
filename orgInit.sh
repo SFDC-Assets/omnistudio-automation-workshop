@@ -3,7 +3,8 @@
 # https://hosted-scratch.herokuapp.com/launch?template=https://github.com/SFDC-Assets/omnistudio-automation-workshop
 
 #create scratch org
-sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix omni -o studio.workshop
+# sfdx shane:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 --userprefix omni -o studio.workshop
+sfdx force:org:create -f config/project-scratch-def.json -d 30 -s --wait 60 username=omni0@studio.workshop
 
 sfdx force:package:install --package=04t1E00000127We --wait 20
 sfdx force:package:install --package=04t1E000001Iql5 --wait 2

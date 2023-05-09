@@ -3,7 +3,6 @@
     <isVisibleByExternalUsers>false</isVisibleByExternalUsers>
     <language>en_US</language>
     <masterLabel>Salesforcecom_logosvg</masterLabel>
-    <originNetwork>Products Home</originNetwork>
     <relationships>
         <workspace>
             <access>INFERRED</access>
