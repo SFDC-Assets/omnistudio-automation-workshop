@@ -7,5 +7,5 @@
     "name": "omnistudio_scratch_org",
     "namespace": "",
     "sfdcLoginUrl": "https://sfi-omnistudio-starter.my.salesforce.com",
-    "sourceApiVersion": "54.0"
+    "sourceApiVersion": "57.0"
 }
