@@ -18,7 +18,7 @@ sf community create --name 'ProductInterest' --templatename 'Customer Service' -
 sf project deploy start -m ApexClass:MetadataService
 
 #set the remote sites
-sf apex run -f dparemoteSites.cls
+# sf apex run -f dparemoteSites.cls
 
 sf project deploy start -m Settings:Security
 sf project deploy start -d force-app -c
