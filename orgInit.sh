@@ -21,9 +21,9 @@ sf project deploy start -m ApexClass:MetadataService
 sf apex run -f dparemoteSites.cls
 
 sf project deploy start -m Settings:Security
-sf project deploy start -d force-app
-sf project deploy start -d omnideploy
-sf project deploy start -d community
+sf project deploy start -d force-app -c
+sf project deploy start -d omnideploy -c
+sf project deploy start -d community -c
 
 sf org assign permset -n Slack_Permissions
 
