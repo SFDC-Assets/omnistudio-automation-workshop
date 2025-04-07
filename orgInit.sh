@@ -1,10 +1,9 @@
 #!/usr/bin/env bash
-
 # https://hosted-scratch.herokuapp.com/launch?template=https://github.com/SFDC-Assets/omnistudio-automation-workshop
 
 #create scratch org
 sf demoutil org create scratch -f config/project-scratch-def.json -d 30 -s -p omni -e studio.workshop
-
+sf force:org:open -o deploybot@dxhub.org -r
 sf package install -p 04t4W000003ChfP --wait 20 -r
 sf package install -p 04tHn000001dvY4 --wait 30
 sf package install -p 04t1E000001Iql5 --wait 2
