@@ -4,7 +4,7 @@
 
 #create scratch org
 sf demoutil org create scratch -f config/project-scratch-def.json -d 30 -s -p omni -e studio.workshop
-
+sf org --list
 sf package install -p 04t4W000003ChfP --wait 20 -r
 sf package install -p 04tHn000001dvY4 --wait 30
 sf package install -p 04t1E000001Iql5 --wait 2
